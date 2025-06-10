@@ -13,13 +13,20 @@
 </head>
 <!-- Inline, Internal, External -->
 <body>
-    <button onclick="buttonClick()">Click me</button>
+    <form>
+        <input id="usernameInput" type="text" placeholder="Enter your username" required>
+        <input id="passwordInput" type="password" placeholder="Enter your password" required>
+        <button type="submit" onclick="submitForm()">Submit</button>
+    </form>
     <script>
-        function buttonClick(){
-            console.log('Hello World');
-            console.log('Hello World2');
+        function submitForm(){
+            let usernameInput = document.getElementById("usernameInput")
+            let passwordInput = document.getElementById("passwordInput")
+            // alert("Form has been submitted")
+            console.log(usernameInput.value)
+            console.log(passwordInput.value)
         }
     </script>
-    <script src="basic_script.js"></script>
+    <script src="loops.js"></script>
 </body>
 </html>
